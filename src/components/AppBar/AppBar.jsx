@@ -1,4 +1,4 @@
-import { TaskCounter } from '../TaskCounter/taskCounter';
+import { TaskCounter } from '../TaskCounter/TaskCounter';
 import { StatusFilter } from '../StatusFilter/StatusFilter';
 import css from './AppBar.module.css';
 
