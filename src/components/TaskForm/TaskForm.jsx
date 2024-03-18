@@ -23,7 +23,7 @@ export const TaskForm = () => {
         name="text"
         placeholder="Enter task text..."
       />
-      <button type="submit">Add task</button>
+      <button type="submit">Add</button>
     </form>
   );
 };

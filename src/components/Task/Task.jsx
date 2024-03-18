@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
-import css from './Task.module.css';
 import { deleteTask, toggleCompleted } from '../../redux/actions';
+import { IoClose } from "react-icons/io5";
+import css from './Task.module.css';
 
 
 export const Task = ({ task }) => {
@@ -18,7 +19,7 @@ export const Task = ({ task }) => {
       />
       <p className={css.text}>{task.text}</p>
       <button className={css.btn} onClick={handleDelete}>
-        x
+        <IoClose/>
       </button>
     </div>
   );

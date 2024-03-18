@@ -2,6 +2,8 @@
   font-family: sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --main-green: #08bf02;
+  --mint: #9aff7c;
 }
 
 section {
@@ -10,6 +12,9 @@ section {
 
 body {
   margin: 0;
+  background-image: linear-gradient(to bottom, var(--main-green), var(--mint));
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 h1,

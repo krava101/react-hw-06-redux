@@ -21,11 +21,16 @@
     border-radius: 4px;
     background-color: transparent;
     cursor: pointer;
-    color: #f44336;
+    color: var(--main-green);
+    transition: background-color .2s linear, color .2s linear;
+    background-color: var(--main-green);
+    color: var(--mint);
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1), inset -2px 2px 5px 0 rgba(255, 255, 255, 0.2), inset 2px -2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-    background-color: #e2e5e8;
+    background-color:  var(--mint);
+    color: var(--main-green);
 }
 
 .btn:active {

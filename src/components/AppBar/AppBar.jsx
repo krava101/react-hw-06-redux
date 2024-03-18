@@ -9,7 +9,7 @@ export default function AppBar() {
         <h2>Tasks</h2>
         <TaskCounter/>
       </section>
-      <section>
+      <section className={css.filter}>
         <h2>Filter by status</h2>
         <StatusFilter/>
       </section>
