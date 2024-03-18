@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper section {
+    display: grid;
+    gap: 4px;
+}
+
+.wrapper h2 {
+    margin: 0;
+    font-size: 16px;
+}
