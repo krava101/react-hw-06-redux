@@ -14,6 +14,7 @@ export const TaskCounter = () => {
   );
 
   const percent = (count.completed / (count.completed + count.active) * 100).toFixed(0); 
+  const totalPercent = isNaN(percent) ? 0 : percent;
   const progressStyle = { strokeDashoffset: `calc(400 - (375 * ${percent}) / 100)` };
 
   return (
@@ -23,7 +24,7 @@ export const TaskCounter = () => {
           <circle cx={60} cy={60} r={60}></circle>
           <circle cx={60} cy={60} r={60} style={progressStyle}></circle>
         </svg>
-        <p className={css.percent}>{percent}<span>%</span></p>
+        <p className={css.percent}>{totalPercent}<span>%</span></p>
       </div>
       <div>
         <p>Active: {count.active}</p>

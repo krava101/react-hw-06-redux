@@ -24,12 +24,15 @@ export const TaskList = () => {
   const visibleTasks = getVisibleTasks(tasks, statusFilter);
 
   return (
-    <ul className={css.list}>
-      {visibleTasks.map((task) => (
-        <li className={css.listItem} key={task.id}>
-          <Task task={task} />
-        </li>
-      ))}
-    </ul>
+    <>
+      {visibleTasks.length > 0 && <ul className={css.list}>
+        {visibleTasks.map((task) => (
+          <li className={css.listItem} key={task.id}>
+            <Task task={task} />
+          </li>
+        ))}
+        </ul>}
+        
+    </>
   );
 };
